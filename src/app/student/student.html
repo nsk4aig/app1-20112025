@@ -1,0 +1,10 @@
+<p>student works!</p>
+<div>
+    <!-- <input type="text"  [value]="name" placeholder="Name" /> <br/> -->
+     <input type="text"  [(ngModel)]="name" placeholder="Name" /> <br/>
+    <input type="text"  [(ngModel)]="age" placeholder="Age" /> <br/>
+    <input type="text" [(ngModel)]="city" placeholder="City" /> <br/>
+    <button (click)="addStudent()">Save</button>
+    <button (click)="showStudents()">Display</button><hr/>
+    <span>{{msg}}</span>
+</div>
