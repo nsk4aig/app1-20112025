@@ -13,6 +13,7 @@ export class Student {
   age:number = 0;
   city:string = "Banglore";
   msg:string = ''
+  outStr:string = ''
 
   studs:any [] = [];
 
@@ -24,6 +25,10 @@ export class Student {
 
   showStudents(){
     console.log(this.studs);
-  }
+    this.outStr = '';
 
+    for(let s of this.studs){
+      this.outStr += `${s.name}-${s.age}-${s.city}<br/>`;
+    }
+  }
 }
